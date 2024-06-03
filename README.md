@@ -275,7 +275,7 @@ In your Contentful space, go to **Settings > Webhooks** and add a new webhook:
 
   ![Content webhook url](https://github.com/vercel/next.js/assets/9113740/c8df492a-57d6-42a1-8a3c-b0de3d6ad42f)
 
-- **Specify Secret Header:** Add a secret header named `x-vercel-reval-key` and enter the value of the
+- **Specify Secret Header:** Add a secret header named `x-amplify-reval-key` and enter the value of the
   `CONTENTFUL_REVALIDATE_SECRET` from before.
 
   ![Content secret header](https://github.com/vercel/next.js/assets/9113740/574935e6-0d31-4e4f-b914-8b01bdf03d5e)
