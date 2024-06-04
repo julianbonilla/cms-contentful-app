@@ -93,7 +93,7 @@ export async function getPostAndMorePosts(
     `query {
       postCollection(where: { slug: "${slug}" }, preview: ${
         preview ? "true" : "false"
-      }, limit: 2) {
+      }, limit: 3) {
         items {
           ${POST_GRAPHQL_FIELDS}
         }
