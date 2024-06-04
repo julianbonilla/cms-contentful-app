@@ -93,7 +93,7 @@ export async function getPostAndMorePosts(
     `query {
       postCollection(where: { slug: "${slug}" }, preview: ${
         preview ? "true" : "false"
-      }, limit: 1) {
+      }, limit: 2) {
         items {
           ${POST_GRAPHQL_FIELDS}
         }
@@ -105,7 +105,7 @@ export async function getPostAndMorePosts(
     `query {
       postCollection(where: { slug_not_in: "${slug}" }, order: date_DESC, preview: ${
         preview ? "true" : "false"
-      }, limit: 2) {
+      }, limit: 3) {
         items {
           ${POST_GRAPHQL_FIELDS}
         }
