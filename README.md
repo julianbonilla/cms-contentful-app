@@ -1,41 +1,16 @@
-# A statically generated blog example using Next.js and Contentful
+# A statically generated example using Amplify, Next.js, and Contentful
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feature using [Contentful](https://www.contentful.com/) as the data source.
+This example showcases Next.js's [server-side rendering (SSR)](https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering) and [static site generation (SSG)](https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation) features using [Contentful](https://www.contentful.com/) as the data source.
 
 ## Demo
 
-### [https://app-router-contentful.vercel.app/](https://app-router-contentful.vercel.app/)
+### [https://main.d3ndiez1legscb.amplifyapp.com](https://main.d3ndiez1legscb.amplifyapp.com/)
 
 ## Deploy your own
 
-Using the Deploy Button below, you'll deploy the Next.js project as well as connect it to your Contentful space using the Vercel Contentful Integration.
+Using the button below, you'll deploy the Next.js project as well as connect it to your Contentful space using [AWS Amplify](https://docs.amplify.aws/nextjs/).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fcms-contentful&project-name=nextjs-contentful-blog&repository-name=nextjs-contentful-blog&demo-title=Next.js+Blog&demo-description=Static+blog+with+multiple+authors+using+Draft+Mode&demo-url=https%3A%2F%2Fnext-blog-contentful.vercel.app%2F&demo-image=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1625705016%2Ffront%2Fexamples%2FCleanShot_2021-07-07_at_19.43.15_2x.png&integration-ids=oac_aZtAZpDfT1lX3zrnWy7KT9VA&env=CONTENTFUL_PREVIEW_SECRET&envDescription=Any%20URL%20friendly%20value%20to%20secure%20Draft%20Mode)
-
-### Related examples
-
-- [AgilityCMS](/examples/cms-agilitycms)
-- [Builder.io](/examples/cms-builder-io)
-- [ButterCMS](/examples/cms-buttercms)
-- [Contentful](/examples/cms-contentful)
-- [Cosmic](/examples/cms-cosmic)
-- [DatoCMS](/examples/cms-datocms)
-- [DotCMS](/examples/cms-dotcms)
-- [Drupal](/examples/cms-drupal)
-- [Enterspeed](/examples/cms-enterspeed)
-- [Ghost](/examples/cms-ghost)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent](/examples/cms-kontent-ai)
-- [Prepr](/examples/cms-prepr)
-- [Prismic](/examples/cms-prismic)
-- [Sanity](/examples/cms-sanity)
-- [Sitefinity](/examples/cms-sitefinity)
-- [Storyblok](/examples/cms-storyblok)
-- [TakeShape](/examples/cms-takeshape)
-- [Umbraco heartcore](/examples/cms-umbraco-heartcore)
-- [Webiny](/examples/cms-webiny)
-- [Blog Starter](/examples/blog-starter)
-- [WordPress](/examples/cms-wordpress)
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/julianbonilla/cms-contentful-app)
 
 ## How to use
 
@@ -213,7 +188,7 @@ yarn install
 yarn dev
 ```
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+Your blog should be up and running on [http://localhost:3000](http://localhost:3000)!
 
 ### Step 7. Try Draft Mode
 
@@ -239,23 +214,23 @@ Once saved, go to one of the posts you've created and:
 
 You will now be able to see the updated title. To manually exit Draft Mode, you can navigate to `/api/disable-draft` in the browser.
 
-### Step 8. Deploy on Vercel
+### Step 8. Deploy on AWS Amplify
 
-You can deploy this app to the cloud with [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+You can deploy this app to the cloud with [Amplify](https://aws.amazon.com/amplify/) ([Documentation](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html)).
 
 #### Deploy Your Local Project
 
-To deploy your local project to Vercel, push it to GitHub/GitLab/Bitbucket and [import to Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example).
+To deploy your local project to Amplify, push it to GitHub/GitLab/Bitbucket and [import to Amplify](https://console.aws.amazon.com/amplify/create/add-repo).
 
-**Important**: When you import your project on Vercel, make sure to click on **Environment Variables** and set them to match your `.env.local` file.
+**Important**: When you import your project on Amplify, make sure to click on **Hosting > Environment Variables** and set them to match your `.env.local` file.
 
 #### Deploy from Our Template
 
-Alternatively, you can deploy using our template by clicking on the Deploy button below.
+Alternatively, you can deploy using our template by clicking on the button below.
 
-This will deploy the Next.js project as well as connect it to your Contentful space using the Vercel Contentful Integration. If you are using Draft Mode, make sure to add `CONTENTFUL_PREVIEW_SECRET` as an [Environment Variable](https://vercel.com/docs/concepts/projects/environment-variables) as well.
+Using the Deploy Button below, you'll deploy the Next.js project as well as connect it to your Contentful space using [AWS Amplify](https://docs.amplify.aws/nextjs/).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fcms-contentful&project-name=nextjs-contentful-blog&repository-name=nextjs-contentful-blog&demo-title=Next.js+Blog&demo-description=Static+blog+with+multiple+authors+using+Draft+Mode&demo-url=https%3A%2F%2Fnext-blog-contentful.vercel.app%2F&demo-image=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1625705016%2Ffront%2Fexamples%2FCleanShot_2021-07-07_at_19.43.15_2x.png&integration-ids=oac_aZtAZpDfT1lX3zrnWy7KT9VA&env=CONTENTFUL_PREVIEW_SECRET,CONTENTFUL_REVALIDATE_SECRET&envDescription=Any%20URL%20friendly%20value%20to%20secure%20Your%20App)
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/julianbonilla/cms-contentful-app)
 
 ### Step 9. Try using On-Demand Revalidation
 
@@ -263,13 +238,13 @@ In your Contentful space, go to **Settings > Webhooks** and add a new webhook:
 
 - **Give the webhook a name**
 - **Activate:** Check the activate checkbox to ensure the webhook is marked as active
-- **Specify the POST URL:** Using the URL from your Vercel deployment in step 8, add the path `/api/revalidate` at the end, so it would look something like:
+- **Specify the POST URL:** Using the URL from your Amplify deployment in step 8, add the path `/api/revalidate` at the end, so it would look something like:
 
   ```
-  https://<YOUR_VERCEL_DEPLOYMENT_URL>/api/revalidate
+  https://<YOUR_AMPLIFY_DEPLOYMENT_URL>/api/revalidate
   ```
 
-  Replace `<YOUR_VERCEL_DEPLOYMENT_URL>` with your own deployment URL as noted in the Vercel dashboard.
+  Replace `<YOUR_AMPLIFY_DEPLOYMENT_URL>` with your own deployment URL as noted in the Amplify dashboard.
 
 - **Specify Triggers:** You can choose to trigger for all events or specific events only, such as the Publishing and Unpublishing of Entries and Assets, as shown below.
 
@@ -288,6 +263,6 @@ In your Contentful space, go to **Settings > Webhooks** and add a new webhook:
 
   ![Content publish changes](https://github.com/vercel/next.js/assets/9113740/ad96bfa7-89c1-4e46-9d9c-9067176c9769)
 
-- **Verify:** You can verify if your request was made successfully by checking the webhook request log on Contentful and checking for a successful 200 status code, or by having your functions tab open on Vercel when committing the change (log drains may also be used). If you are experiencing issues with the api call, ensure you have correctly entered in the value for environment variable `CONTENTFUL_REVALIDATE_SECRET` within your Vercel deployment.
+- **Verify:** You can verify if your request was made successfully by checking the webhook request log on Contentful and checking for a successful 200 status code, or by having your functions tab open on Vercel when committing the change (log drains may also be used). If you are experiencing issues with the api call, ensure you have correctly entered in the value for environment variable `CONTENTFUL_REVALIDATE_SECRET` within your Amplify deployment.
 
   ![Content successful request](https://github.com/vercel/next.js/assets/9113740/ed1ffbe9-4dbf-4ec6-9c1f-39c8949c4d38)
